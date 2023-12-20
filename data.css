@@ -1,0 +1,188 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    /*التباعد بين الاسطر*/
+    line-height: 1.6;
+    color: black;
+    background-color:ivory;
+
+
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+header {
+
+    padding: 20px 0;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("cover.jpg");
+}
+
+.logo {
+
+    font-size: 26px;
+    font-weight: bold;
+    color: orangered;
+    display: flex;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+}
+
+
+nav>ul>li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+.main-nav>li>a {
+    text-decoration: none;
+    display: flex;
+    color: orangered;
+    font-weight: bold;
+    font-size: 26px;
+    height: 72px;
+    justify-content: center;
+    align-items: center;
+    padding: 0 30px;
+
+}
+
+section {
+    margin: 20px 0;
+}
+
+.data {
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+h1,
+h2,
+h3 {
+    color: orangered;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 40px 60px;
+}
+
+big {
+    font-size: 20px;
+}
+
+dl {
+    margin-top: 20px;
+}
+
+dt {
+    font-weight: bold;
+    color: black;
+}
+
+dd {
+    margin-bottom: 20px;
+}
+
+ol,
+ul {
+    margin-top: 10px;
+
+}
+
+
+@keyframes rotateHeading {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+/* Scaling animation for the image */
+@keyframes scaleImage {
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.05);
+    }
+}
+
+/* Apply animations to specific elements */
+
+header .logo {
+    animation: rotateHeading 4s linear infinite;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px 0;
+    transform: scale(0.9);
+    /* Start with a slightly scaled-down size */
+    transition: transform 0.5s ease-out;
+    /* Use a smooth transition effect */
+}
+
+img:hover {
+    transform: scale(1);
+    /* تقوم هذه القاعدة بتعيين حجم الصورة إلى حجمها الأصلي (بدون تغيير الحجم) عند تحريك الماوس فوقها. */
+}
+
+
+
+
+.contact {
+    background-color: beige;
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #3498db;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+footer {
+    background-color:orangered;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
